@@ -69,44 +69,6 @@ After running the development server:
 - Upon successful login, access protected areas of the application.
 - Utilize the dashboard to manage customer information.
 
-## Project Structure 📂
-
-```plaintext
-CRM/
-├── dcrm/
-│   ├── __pycache__/
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── wsgi.py
-│
-├── website/
-│   ├── __pycache__/
-│   ├── migrations/
-│   ├── templates/
-│   │   ├── add_record.html
-│   │   ├── base.html
-│   │   ├── home.html
-│   │   ├── navbar.html
-│   │   ├── record.html
-│   │   ├── register.html
-│   │   ├── update_record.html
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── forms.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── urls.py
-│   ├── views.py
-│
-├── .gitignore
-├── manage.py
-├── requirements.txt
-└── virt/  # Virtual environment
-```
-
 ## Contributing 🌍
 
 Contributions are welcome! To contribute:
