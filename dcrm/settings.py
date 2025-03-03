@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'crm',
         'USER': 'root',
         'HOST': '127.0.0.1',
-        'PASSWORD': 'raj_28092003',
+        'PASSWORD': 'your-password',
         'PORT': '3306',
     }
 }
