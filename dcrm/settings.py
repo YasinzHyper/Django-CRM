@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-il)2w9b-!hcauovaegc%o91_tv)m3$p4of+s_(@(4d63+9j9qi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app','127.0.0.1']
 
 
 # Application definition
@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'crm',
         'USER': 'root',
         'HOST': '127.0.0.1',
-        'PASSWORD': 'your-password',
+        'PASSWORD': 'raj_28092003',
         'PORT': '3306',
     }
 }
