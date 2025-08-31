@@ -17,6 +17,54 @@ The Django-based Customer Relationship Management (CRM) system enables user auth
   
 ## Installation ⚙️
 
+### Option 1: Docker Setup (Recommended) 🐳
+
+The easiest way to run this application is using Docker and Docker Compose:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/rajkelawala/Django-CRM.git
+   cd Django-CRM
+   ```
+
+2. **Build and run with Docker Compose**:
+   ```bash
+   docker-compose up --build
+   ```
+
+3. **Access the application**:
+   - Open your browser and go to `http://localhost:8000`
+   - Login with the default superuser:
+     - Username: `admin`
+     - Password: `admin123`
+   - You should see a dashboard with 5 sample customer records
+
+4. **Troubleshooting** (if you see database errors):
+   ```bash
+   # Reset everything and start fresh
+   docker-compose down -v
+   docker-compose build --no-cache
+   docker-compose up -d
+   
+   # Check logs if issues persist
+   docker-compose logs web
+   
+   # Run troubleshooting script
+   docker-compose exec web ./troubleshoot.sh
+   ```
+
+5. **To stop the application**:
+   ```bash
+   docker-compose down
+   ```
+
+6. **To rebuild after making changes**:
+   ```bash
+   docker-compose up --build
+   ```
+
+### Option 2: Manual Setup
+
 1. **Clone the repository**:
 
    ```bash
