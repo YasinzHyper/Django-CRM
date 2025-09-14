@@ -21,6 +21,8 @@ The Django-based Customer Relationship Management (CRM) system enables user auth
 
 The easiest way to run this application is using Docker and Docker Compose:
 
+#### Setup Steps
+
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/rajkelawala/Django-CRM.git
@@ -38,6 +40,23 @@ The easiest way to run this application is using Docker and Docker Compose:
      - Username: `admin`
      - Password: `admin123`
    - You should see a dashboard with 5 sample customer records
+
+#### Troubleshooting For Windows Users (Important!)
+
+If you're on Windows and encounter the error `exec /app/entrypoint.sh: no such file or directory`, this is due to line ending differences between Windows and Unix systems. The repository now includes a `.gitattributes` file to handle this automatically, but if you cloned before this fix:
+
+1. **Re-clone the repository** (recommended):
+   ```bash
+   git clone https://github.com/rajkelawala/Django-CRM.git
+   cd Django-CRM
+   ```
+
+2. **Or convert line endings manually**:
+   ```bash
+   git config core.autocrlf false
+   git rm --cached -r .
+   git reset --hard
+   ```
 
 4. **Troubleshooting** (if you see database errors):
    ```bash
